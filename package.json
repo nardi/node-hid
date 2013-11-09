@@ -13,9 +13,8 @@
     },
     "bundleDependencies": [ "hidapi" ],
     "scripts": {
-        "preupdate": "node get-hidapi.js",
-        "preinstall": "node get-hidapi.js",
-        "install": "node install.js"
+        "preupdate": "git clone http://github.com/signal11/hidapi",
+        "preinstall": "git clone http://github.com/signal11/hidapi"
     },
     "main": "./build/Release/HID.node",
     "engines": {
