@@ -13,9 +13,9 @@
     },
     "bundleDependencies": [ "hidapi" ],
     "scripts": {
-        "preupdate": "sh get-hidapi.sh",
-        "preinstall": "sh get-hidapi.sh",
-        "install": "sh install.sh"
+        "preupdate": "node get-hidapi.js",
+        "preinstall": "node get-hidapi.js",
+        "install": "node install.js"
     },
     "main": "./build/Release/HID.node",
     "engines": {
